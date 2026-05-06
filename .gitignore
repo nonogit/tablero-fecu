@@ -1,0 +1,33 @@
+# Heavy local artefacts — never push these to GitHub
+market.db
+market.db-journal
+market.db-wal
+market.db-shm
+
+# Quarterly raw downloads (multi-GB zip dumps)
+20*/descargas/
+20*/descarga_trimestral.html
+
+# Power BI working file
+*.pbix
+
+# Reference PDFs
+*.pdf
+
+# Python / IDE
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local working files
+*.log
+*.tmp
+verify_*.py
+check_*.py

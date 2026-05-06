@@ -1,0 +1,94 @@
+insurance_type,ramo_code,ramo_name,product_group
+GI,1,Incendio,Property
+GI,2,Pérdida de Beneficios por Incendio,Property
+GI,3,Otros Riesgos Adicionales a Incendio,Property
+GI,4,Terremoto y Tsunami,Property
+GI,5,Pérdida de Beneficios por Terremoto,Property
+GI,6,Otros Riesgos de la Naturaleza,Property
+GI,7,Terrorismo,Property
+GI,8,Robo,Property
+GI,9,Cristales,Property
+GI,10,Daños Físicos Vehículos Motorizados,Motor
+GI,11,Casco Marítimo,Marine
+GI,12,Casco Aéreo,Specialties
+GI,13,Responsabilidad Civil Hogar y Condominios,Liability
+GI,14,Responsabilidad Civil Profesional,Professional Liability
+GI,15,Responsabilidad Civil Industria, Infraestructura y Comercio,Liability
+GI,16,Responsabilidad Civil Vehículos Motorizados,Motor
+GI,17,Transporte Terrestre,Marine
+GI,18,Transporte Marítimo,Marine
+GI,19,Transporte Aéreo,Specialties
+GI,20,Equipo Contratista,Engineering Lines
+GI,21,Todo Riesgo Construcción y Montaje,Engineering Lines
+GI,22,Avería de Maquinaria,Engineering Lines
+GI,23,Equipo Electrónico,Engineering Lines
+GI,24,Garantía,Surety
+GI,25,Fidelidad,Financial Lines
+GI,26,Seguro Extensión y Garantía,Warranty
+GI,27,Seguro de Crédito por Ventas a Plazo,Financial Lines
+GI,28,Seguro de Crédito a la Exportación,Financial Lines
+GI,29,Otros Seguros de Crédito,Financial Lines
+GI,30,Salud,Health
+GI,31,Accidentes Personales,Health
+GI,32,SOAP,SOAP
+GI,33,Seguro Cesantía,Specialties
+GI,34,Seguro de Título,Others
+GI,35,Seguro Agrícola,Agricola
+GI,36,Seguro de Asistencia,Asistencia
+GI,50,Otros Seguros,Others
+Life,C101,Vida Entera Individual,Individual Life
+Life,C102,Temporal de Vida Individual,Individual Life
+Life,C103,CUI Individual,Individual Life
+Life,C104,Mixto o Dotal Individual,Individual Life
+Life,C105,Rentas Privadas Individual,Individual Life
+Life,C106,Dotal Puro Individual,Individual Life
+Life,C107,Protección Familiar Individual,Individual Life
+Life,C108,Incapacidad o Invalidez Individual,Individual Life
+Life,C109,Salud Individual,Health
+Life,C110,Accidentes Personales Individual,Individual Life
+Life,C111,Asistencia Individual,Individual Life
+Life,C112,Desgravamen Hipotecario Individual,Individual Life
+Life,C113,Desgravamen Consumo Individual,Individual Life
+Life,C114,SOAP Individual,Individual Life
+Life,C150,Otros Individual,Individual Life
+Life,C201,Vida Entera Colectivo,Group Life
+Life,C202,Temporal de Vida Colectivo,Group Life
+Life,C203,CUI Colectivo,Group Life
+Life,C204,Mixto o Dotal Colectivo,Group Life
+Life,C205,Rentas Privadas Colectivo,Group Life
+Life,C206,Dotal Puro Colectivo,Group Life
+Life,C207,Protección Familiar Colectivo,Group Life
+Life,C208,Incapacidad o Invalidez Colectivo,Group Life
+Life,C209,Salud Colectivo,Health
+Life,C210,Accidentes Personales Colectivo,Group Life
+Life,C211,Asistencia Colectivo,Group Life
+Life,C212,Desgravamen Hipotecario Colectivo,Group Life
+Life,C213,Desgravamen Consumo Colectivo,Group Life
+Life,C214,SOAP Colectivo,Group Life
+Life,C250,Otros Colectivo,Group Life
+Life,C301,Vida Entera Masivo,Mass Consumer
+Life,C302,Temporal de Vida Masivo,Mass Consumer
+Life,C303,CUI Masivo,Mass Consumer
+Life,C304,Mixto o Dotal Masivo,Mass Consumer
+Life,C305,Rentas Privadas Masivo,Mass Consumer
+Life,C306,Dotal Puro Masivo,Mass Consumer
+Life,C307,Protección Familiar Masivo,Mass Consumer
+Life,C308,Incapacidad o Invalidez Masivo,Mass Consumer
+Life,C309,Salud Masivo,Health
+Life,C310,Accidentes Personales Masivo,Mass Consumer
+Life,C311,Asistencia Masivo,Mass Consumer
+Life,C312,Desgravamen Hipotecario Masivo,Mass Consumer
+Life,C313,Desgravamen Consumo Masivo,Mass Consumer
+Life,C314,SOAP Masivo,Mass Consumer
+Life,C350,Otros Masivo,Mass Consumer
+Life,C420,SIS,SIS
+Life,C421,Renta Vitalicia de Vejez (excluir si hay subcódigos),Annuities
+Life,C4211,Renta Vitalicia de Vejez Normal,Annuities
+Life,C4212,Renta Vitalicia de Vejez Anticipada,Annuities
+Life,C422,Renta Vitalicia de Invalidez (excluir si hay subcódigos),Annuities
+Life,C4221,Renta Vitalicia de Invalidez Total,Annuities
+Life,C4222,Renta Vitalicia de Invalidez Parcial,Annuities
+Life,C423,Renta Vitalicia de Sobrevivencia,Annuities
+Life,C424,Invalidez y Sobrevivencia C-528,SIS
+Life,C425,APV,APC
+Life,C426,APVC,APC
