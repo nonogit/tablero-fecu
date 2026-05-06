@@ -37,3 +37,7 @@ check_*.py
 
 # Pi-specific requirements (not used by Streamlit Cloud)
 requirements_pi.txt
+
+# Claude Code local memory & internal notes
+.claude/
+DEVELOPMENT_PLAN.md
