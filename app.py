@@ -157,6 +157,22 @@ def fmt_money_mm(v) -> str:
     return f"{CUR_PREFIX_MM} {v / MM:,.0f}"
 
 
+def fmt_money_compact(v) -> str:
+    """Compact money for metric tiles: auto-scales to K / M / B / T."""
+    if pd.isna(v):
+        return "—"
+    abs_v = abs(v)
+    if abs_v >= 1e12:
+        return f"{v / 1e12:,.2f}T"
+    if abs_v >= 1e9:
+        return f"{v / 1e9:,.2f}B"
+    if abs_v >= 1e6:
+        return f"{v / 1e6:,.1f}M"
+    if abs_v >= 1e3:
+        return f"{v / 1e3:,.1f}K"
+    return f"{v:,.0f}"
+
+
 # ── Segment filter ────────────────────────────────────────────────────────────
 sel_types = st.sidebar.multiselect(
     "Segmento", ALL_TYPES, default=ALL_TYPES, format_func=TYPE_LABELS.get,
@@ -311,7 +327,7 @@ if section == "Compañías":
         n_cos   = len(kpis)
 
         c1, c2, c3, c4 = st.columns(4)
-        c1.metric("GWP mercado", fmt_money_mm(mkt_gwp))
+        c1.metric(f"GWP mercado ({CURRENCY})", fmt_money_compact(mkt_gwp))
         c2.metric("Compañías", n_cos)
         c3.metric("Loss Ratio promedio", fmt_pct(kpis["loss_ratio_pct"].mean()))
         c4.metric("Combined Ratio promedio", fmt_pct(kpis["combined_ratio_pct"].mean()))
@@ -377,7 +393,7 @@ if section == "Compañías":
         for _, row in z_kpis.iterrows():
             with st.expander(row["company_name"], expanded=True):
                 c1, c2, c3, c4, c5 = st.columns(5)
-                c1.metric("GWP", fmt_money_mm(row['gwp']))
+                c1.metric(f"GWP ({CURRENCY})", fmt_money_compact(row['gwp']))
                 c2.metric("Loss Ratio", fmt_pct(row["loss_ratio_pct"]))
                 c3.metric("Combined Ratio", fmt_pct(row["combined_ratio_pct"]))
                 c4.metric("Net Margin", fmt_pct(row["net_margin_pct"]))
