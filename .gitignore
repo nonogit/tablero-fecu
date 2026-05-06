@@ -34,3 +34,6 @@ check_*.py
 
 # Streamlit secrets (password, etc.)
 .streamlit/secrets.toml
+
+# Pi-specific requirements (not used by Streamlit Cloud)
+requirements_pi.txt
