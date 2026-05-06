@@ -72,6 +72,36 @@ def period_label(year: int, quarter: int) -> str:
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(page_title="CMF Market Dashboard", layout="wide", initial_sidebar_state="expanded")
+
+
+# ── Password gate ─────────────────────────────────────────────────────────────
+def _check_password() -> bool:
+    try:
+        expected = st.secrets["password"]
+    except Exception:
+        return True  # No secret configured -> open (local dev)
+
+    if st.session_state.get("auth_ok"):
+        return True
+
+    def _attempt():
+        if st.session_state.get("pw_input") == expected:
+            st.session_state["auth_ok"] = True
+            st.session_state["pw_input"] = ""
+        else:
+            st.session_state["auth_ok"] = False
+
+    st.title("CMF Market Dashboard")
+    st.text_input("Contraseña", type="password", key="pw_input", on_change=_attempt)
+    if st.session_state.get("auth_ok") is False:
+        st.error("Contraseña incorrecta.")
+    return False
+
+
+if not _check_password():
+    st.stop()
+
+
 st.sidebar.title("CMF Market Dashboard")
 
 # ── Section ───────────────────────────────────────────────────────────────────
